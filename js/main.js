@@ -1,36 +1,47 @@
-{mensaje = "Bienvenido a canjes ropa_indumentarias010"
-alert (mensaje)}
+function inicio () {
+    let name = prompt("Ingresa tu nombre")
+    alert ("Hola " + name)
+}
 
-let contrasena = ""
-let usuario = ""
-while (usuario !== "Nico123" || contrasena !== "Nico2005"){
+inicio()
 
-    usuario = prompt("Ingresa tu usuario")
-    contrasena = prompt ("ingresa tu contrasena")
+function sumar (num1, num2){
+    return num1 + num2
+}
 
-    if(usuario !== "Nico123" || contrasena !== "Nico2005"){
-    console.log("Usuario o contraseña incorrecta")
+
+const multiplicar = (a, b) => a * b 
+
+let ejecucion = Number (prompt(
+    "¿Que desea realizar?\n" +
+    "1. suma\n" +
+    "2. Multiplicacion\n" +
+    "0. Salir"
+));
+
+
+while(ejecucion != 0) {
+let num1 = Number (prompt("Ingrese su primer numero"))
+let num2 = Number (prompt("Ingrese su segundo numero"))
+
     
-    mensaje = "Contraseña incorrecta, vuelve a intentar"
-    alert (mensaje)}
+switch (ejecucion){
+    case 1: console.log(sumar (num1, num2))
+    alert ("su resultado es igual a " + sumar(num1, num2))    
+        break;
+    case 2:
+         console.log(multiplicar (num1 , num2))
+    alert ("su resultado es igual a " + multiplicar(num1, num2))    
+         break
+    default:
+    }
+
+    ejecucion = Number (prompt(
+    "¿Que desea realizar?\n" +
+    "1. suma\n" +
+    "2. Multiplicacion\n" +
+    "0. Salir"
+));
 }
-console.log("Bienvenido")
-mensaje = "Bienvenido"
-alert (mensaje)
-
-let cuenta = (prompt("Inegresa el nombre de tu perfil"))
-    console.log("Nombre de la cuenta : " + cuenta)
-mensaje = "El nombre de tu cuenta se registro como " + cuenta;
-alert (mensaje)
-let seguidores = Number(prompt("Ingresa tu numero de seguidores"))
-if (seguidores >= 10000){
-    console.log("Numero de seguidores : " + seguidores )
-mensaje = "Numero de seguidores suficientes para un canje"
-alert (mensaje)
-}else{
-    console.log("No tienes suficientes seguidores para un canje")
-mensaje = "No tienes suficientes seguidores para un canje"
-alert (mensaje)
-}
-
-
+console.log("Saliste del programa")
+alert ("Saliste del programa")
