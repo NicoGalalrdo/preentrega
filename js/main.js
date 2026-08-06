@@ -1,47 +1,47 @@
 function inicio () {
     let name = prompt("Ingresa tu nombre")
-    alert ("Hola " + name)
+    alert ("Hola " + name + " Bienvenido a nuestra tienda de ropa")
 }
 
 inicio()
 
-function sumar (num1, num2){
-    return num1 + num2
+const prendas = ["camisa", "pantalón", "zapatos", "gorra", "bufanda"]
+console.log(prendas.join(", "))
+console.log("tenemos un total de: " + prendas.length + " prendas")
+
+prendas.push ("cinturon")
+console.log(prendas.join(", "))
+console.log("Se agrego una prenda al final del catologo")
+console.log("tenemos un total de: " + prendas.length + " prendas")
+
+
+prendas.unshift("chaleco")
+console.log(prendas.join(", "))
+console.log("Se agrego una prenda al inicio del catalogo")
+console.log("tenemos un total de: " + prendas.length + " prendas")
+
+const eliminada = prendas.pop()
+console.log(prendas.join(", "))
+console.log("se elimino la prenda: " + eliminada )
+console.log("tenemos un total de: " + prendas.length + " prendas")
+
+console.log("Se reemplazo la prenda de indice 1 por shorts")
+prendas.splice(1, 1, "shorts")
+console.log(prendas.join(", "))
+
+
+let buscar = prompt("Ingrese la prenda que desea buscar: ")
+if(prendas.includes(buscar)){
+    console.log("Se encuentra en nuestro catalogo como prenda con indice: " + prendas.indexOf(buscar))
+    alert ("Se encuentra en nuestro catalogo como prenda con indice: " + prendas.indexOf(buscar)) 
+}
+else{
+    console.log("No se encuentra en nuestro catalogo el producto")
+    alert ("No se encuentra en nuestro catalogo el producto")
 }
 
 
-const multiplicar = (a, b) => a * b 
 
-let ejecucion = Number (prompt(
-    "¿Que desea realizar?\n" +
-    "1. suma\n" +
-    "2. Multiplicacion\n" +
-    "0. Salir"
-));
-
-
-while(ejecucion != 0) {
-let num1 = Number (prompt("Ingrese su primer numero"))
-let num2 = Number (prompt("Ingrese su segundo numero"))
-
-    
-switch (ejecucion){
-    case 1: console.log(sumar (num1, num2))
-    alert ("su resultado es igual a " + sumar(num1, num2))    
-        break;
-    case 2:
-         console.log(multiplicar (num1 , num2))
-    alert ("su resultado es igual a " + multiplicar(num1, num2))    
-         break
-    default:
-    }
-
-    ejecucion = Number (prompt(
-    "¿Que desea realizar?\n" +
-    "1. suma\n" +
-    "2. Multiplicacion\n" +
-    "0. Salir"
-));
+for(const prenda of prendas){
+    console.log("prenda con indice " + prendas.indexOf(prenda) + ": " + prenda)
 }
-console.log("Saliste del programa")
-alert ("Saliste del programa")
