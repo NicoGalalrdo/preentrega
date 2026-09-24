@@ -9,10 +9,11 @@
     <script src="./js/main.js" defer></script>
     <body>
         <header>
-      <h1 id="titulo">Mi Lista de compras</h1>
+      <h1 id="titulo">Mi negocio</h1>
       <nav>
         <ul>
           <li><a href="#" class="link">Inicio</a></li>
+          <li><a href="#productos" class="link">Productos</a></li>
         </ul>
       </nav>
     </header>
@@ -22,14 +23,41 @@
       <section id="productos" class="productos"></section>
 
       <section>
-        <h3>Organizar Productos</h3>
-        <label for="inputProducto">Productos</label>
-        <input type="text" id="inputProducto" placeholder="Ingresar producto...">  
-        <button id="btnAgregar">Agregar Producto</button>
-        <button id="btnEliminar">Eleminar Productos</button>
-        <button id="btnRestaurar">Productos Iniciales</button>
+        <h3>Agregar producto</h3>
+        <form id="form-agregar-producto" class="form-agregar-producto">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre del producto"
+            id="input-nombre"
+          />
+          <input
+            type="number"
+            name="precio"
+            placeholder="Precio del producto"
+            id="input-precio"
+          />
+          <input
+            type="text"
+            name="imagen"
+            placeholder="URL de la imagen del producto"
+            id="input-imagen"
+          />
+          <input
+            type="text"
+            name="descripcion"
+            placeholder="Descripcion del producto"
+            id="input-descripcion"
+          />
+          <input type="submit" value="Agregar producto" />
+        </form>
       </section>
-        
+
+      <section>
+        <h3>Carrito</h3>
+    
+        <section id="carrito" class="productos"></section>
+      </section>
     </main>
     <footer>
       <span>&copy;2026</span>
