@@ -5,64 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title> 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="./js/main.js" defer></script>
+</head>
     <body>
-        <header>
-      <h1 id="titulo">Mi negocio</h1>
+      <header>
+        <h1 id="titulo">Mi Tienda</h1>
       <nav>
         <ul>
           <li><a href="#" class="link">Inicio</a></li>
-          <li><a href="#productos" class="link">Productos</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>Productos</h2>
-
-      <section id="productos" class="productos"></section>
-
-      <section>
-        <h3>Agregar producto</h3>
-        <form id="form-agregar-producto" class="form-agregar-producto">
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre del producto"
-            id="input-nombre"
-          />
-          <input
-            type="number"
-            name="precio"
-            placeholder="Precio del producto"
-            id="input-precio"
-          />
-          <input
-            type="text"
-            name="imagen"
-            placeholder="URL de la imagen del producto"
-            id="input-imagen"
-          />
-          <input
-            type="text"
-            name="descripcion"
-            placeholder="Descripcion del producto"
-            id="input-descripcion"
-          />
-          <input type="submit" value="Agregar producto" />
+    <main class="contenedor">
+        <h1>🎛️ Electrodomesticos</h1>
+        <p>
+            Ingrese el electrodomestico que este deseando
+        </p>
+        <form id="formularioElectrodomesticos">
+            <label for="idElectrodomesticos">
+                Inserte aqui lo que busque
+            </label>
+            <input
+                type="text"
+                id="idElectrodomesticos"
+                min="1"
+                placeholder= "Ej : Heladera"
+                required
+            >
+            <button type="submit">
+                Buscar 
+            </button>
         </form>
-      </section>
-
-      <section>
-        <h3>Carrito</h3>
-    
-        <section id="carrito" class="productos"></section>
-      </section>
+        <section id="resultado"></section>
+        <h1>Algunos de nuestros productos</h1>
+        <section id="catalogo"></section>
+        <div id="imagen"></div>
+        
     </main>
-    <footer>
-      <span>&copy;2026</span>
-    </footer>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 
 </html>

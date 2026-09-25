@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: rgb(239, 247, 168);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -39,55 +40,41 @@ main {
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 14px;
-  padding: 18px;
+  background-color: #6b6849;
+  border: 1px solid hsl(240, 6%, 19%);
+  border-radius: 15px;
+  padding: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-.card-boton {
-  width: 100%;
-  margin-top: 14px;
-  padding: 10px 14px;
-  border: none;
-  border-radius: 10px;
-  background-color: #111;
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
-}
 
-.card-boton:hover {
-  background-color: #333;
-  transform: translateY(-1px);
-}
-
-.card-boton:active {
-  transform: translateY(0);
-}
-
-.card-boton:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.form-agregar-producto {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 20px auto;
-}
 
 footer {
   padding: 10px;
   text-align: center;
+}
+
+#flayer {
+    margin-top: 2%;
+    width: 300px;
+    height: auto;
+}
+
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    background-color: rgba(44, 44, 22, 0.336);
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
 }

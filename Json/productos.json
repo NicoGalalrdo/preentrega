@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lavarropas",
+        "precio": 200000
+    },
+    {
+        "id": 2,
+        "nombre": "Aire Acondicionado",
+        "precio": 250000
+    },
+    {
+        "id": 3,
+        "nombre": "Microondas",
+        "precio": 100000
+    },
+    {
+        "id": 4,
+        "nombre": "Heladera",
+        "precio": 350000
+
+    },
+    {
+        "id": 5,
+        "nombre": "Horno Electrico",
+        "precio": 150000
+    },
+    {
+        "id": 6,
+        "nombre": "Cocina Electrica",
+        "precio": 400000
+    },
+    {
+        "id": 7,
+        "nombre": "Frezeer",
+        "precio": 450000
+    },
+    {
+        "id": 8,
+        "nombre": "Freidora de Aire",
+        "precio": 70000
+    }
+]
